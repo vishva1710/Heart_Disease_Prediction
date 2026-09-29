@@ -6,7 +6,7 @@ import requests
 # For local testing: http://127.0.0.1:8000/predict
 # After deploying backend (EC2/Render), replace with the live URL
 # -------------------------------------------------
-API_URL = "https://heart-disease-prediction-2-4kss.onrender.com"
+API_URL = "https://heart-disease-prediction-2-4kss.onrender.com/predict"
 
 st.set_page_config(page_title="Heart Disease Risk Predictor", page_icon="❤️")
 st.title("❤️ Heart Disease Risk Predictor")
