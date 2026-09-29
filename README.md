@@ -69,20 +69,6 @@ streamlit run app.py
 
 The frontend calls the backend over an API, so make sure the backend is running first if you're testing locally. If you're running both locally, update the `API_URL` in `app.py` to point to `http://127.0.0.1:8000/predict` instead of the Render link.
 
-## Some things I ran into while building this
-
-- Had to redo the train/test split logic because of duplicate rows in the dataset causing data leakage
-- Model version mismatch warning when loading the pickle file on a different scikit-learn version - didn't break anything but good to be aware of
-- Spent a while debugging why Render couldn't find my requirements file - turns out I had a typo in the filename and the build path was wrong
-- CORS errors when the frontend and backend were on different origins
-
-## What I'd improve if I had more time
-
-- Add authentication to the API
-- Add proper logging instead of print statements
-- Write some unit tests
-- Try SHAP for feature importance / explainability
-- Move off the free tier hosting so the backend doesn't sleep
 
 ## Dataset
 
@@ -90,4 +76,4 @@ UCI Heart Disease dataset (Cleveland subset).
 
 ---
 
-Built by Vishwa as a personal project to practice the full ML workflow, not just model training.
+
